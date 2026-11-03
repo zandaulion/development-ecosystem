@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A central Linux cloud host anchors development, build orchestration and application hosting, alongside Android and Apple builds, cloud services, AI and local inference. Deployment details are omitted.">
+  <title>My development ecosystem · Public overview</title>
+  <style>
+    :root{color-scheme:light dark;--bg:light-dark(#f5f9fb,#14232d);--text:light-dark(#183342,#e4edf2);--muted:light-dark(#5c7482,#afc3ce);--accent:light-dark(#347e86,#9bd2d4)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:32px 24px}header{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:18px}.eyebrow{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}a{color:var(--accent);text-underline-offset:4px}figure{margin:0}img{display:block;width:100%;height:auto}figcaption,footer{color:var(--muted);font-size:14px;margin-top:20px}h1{font-size:24px;font-weight:600;margin:30px 0 8px}p{margin:0;color:var(--muted)}@media(max-width:700px){main{padding:24px 16px}.diagram{overflow-x:auto;padding-bottom:12px}img{min-width:760px}}@media print{img{min-width:0}main{padding:0}header{display:none}}
+  </style>
+</head>
+<body><main>
+  <header><span class="eyebrow">Engineering architecture · Public overview</span><a href="architecture.svg">Open the vector diagram</a></header>
+  <figure><div class="diagram"><img src="architecture.svg" alt="Every workflow branches from one central Linux cloud machine: Android builds and tests, GitHub and Apple delivery, web hosting, cloud and data services, AI and media tooling, and shared development capabilities."></div><figcaption>All flows stem from the central Linux cloud machine. Solid arrows follow simplified build and delivery sequences; dashed branches show supporting capabilities used across projects. Compilation, device testing and external services can execute elsewhere. Deployment identities and private operational details are omitted.</figcaption></figure>
+  <h1>Technology choices, with deployment details omitted</h1>
+  <p>This overview covers the development stack and delivery workflows. It deliberately avoids enumerating private devices, locations, personal applications, account resources and live service state. A listed tool or workflow does not imply a continuously running service or an active paid resource.</p>
+  <footer>Static HTML and SVG. No scripts, analytics, external fonts or embedded inventory.</footer>
+</main></body>
+</html>

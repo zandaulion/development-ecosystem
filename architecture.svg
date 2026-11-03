@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1510" role="img" aria-labelledby="title desc">
+  <title id="title">Development ecosystem rooted in a central Linux cloud machine</title>
+  <desc id="desc">A developer workstation connects to the central Linux cloud machine. Every workflow branches from this shared development and orchestration hub: Android build and device validation, GitHub and Apple delivery, web hosting, cloud and data services, AI and media tooling, and model and shared-delivery workflows. Solid arrows show simplified build and delivery sequences. Dashed branches show capabilities coordinated or used across projects, not direct traffic or execution on the central machine. Deployment identities and operational details are omitted.</desc>
+  <style>
+    text{font-family:system-ui,sans-serif;fill:#183342}.heading{font-size:30px;font-weight:600}.sub{font-size:14px;fill:#5c7482}.label{font-size:16px;font-weight:600}.detail{font-size:13px;fill:#5c7482}.section{font-size:13px;font-weight:600;letter-spacing:1.2px;fill:#347e86}.node{fill:#fff;stroke:#d6e3e8;stroke-width:1.3}.hub{fill:#eaf4f6;stroke:#347e86;stroke-width:1.8}.line,.trunk{fill:none;stroke:#8aabb5;stroke-width:1.5}.line{marker-end:url(#arrow)}.capability{stroke-dasharray:4 4}
+    @media(prefers-color-scheme:dark){text{fill:#e4edf2}.background{fill:#14232d}.node{fill:#1b303c;stroke:#3e5663}.hub{fill:#20444d;stroke:#9bd2d4}.sub,.detail{fill:#afc3ce}.section{fill:#9bd2d4}.line,.trunk{stroke:#91bac7}}
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#8aabb5"/></marker></defs>
+  <rect class="background" width="1120" height="1510" rx="18" fill="#f5f9fb"/>
+  <text x="42" y="47" class="section">PUBLIC OVERVIEW · DEPLOYMENT DETAILS OMITTED</text>
+  <text x="42" y="91" class="heading">One cloud hub, connected workflows</text>
+  <text x="42" y="121" class="sub">A central Linux machine anchors development, orchestration and self-hosted applications.</text>
+
+  <path class="line" d="M322 228 H367"/>
+  <g><rect class="node" x="42" y="186" width="280" height="84" rx="11"/><text x="60" y="218" class="label">Developer workstation</text><text x="60" y="246" class="detail">AI coding · Codex · Claude Code</text></g>
+  <g id="central-cloud"><rect class="hub" x="370" y="172" width="392" height="112" rx="13"/><text x="392" y="208" class="label">Central Linux cloud machine</text><text x="392" y="237" class="detail">Shared source · Development · Orchestration</text><text x="392" y="262" class="detail">Oracle Cloud · Linux · Application hosting</text></g>
+  <text x="804" y="207" class="detail">Solid: build / delivery sequence</text>
+  <text x="804" y="235" class="detail">Dashed: supporting capability</text>
+  <text x="804" y="263" class="detail">Logical links, not network routes</text>
+  <path id="root-spine" class="trunk" d="M566 284 V308 H68 V1252"/>
+
+  <text x="110" y="344" class="section">ANDROID · BUILD → TEST → DISTRIBUTE</text>
+  <path class="line" data-root-branch="android" d="M68 410 H107"/>
+  <path class="line" d="M318 410 H361"/><path class="line" d="M572 410 H615"/><path class="line" d="M826 410 H869"/>
+  <g><rect class="node" x="110" y="368" width="208" height="84" rx="11"/><text x="126" y="400" class="label">Linux build worker</text><text x="126" y="428" class="detail">Separate build environment</text></g>
+  <g><rect class="node" x="364" y="368" width="208" height="84" rx="11"/><text x="380" y="400" class="label">Android toolchain</text><text x="380" y="428" class="detail">JDK · Gradle · Android SDK</text></g>
+  <g><rect class="node" x="618" y="368" width="208" height="84" rx="11"/><text x="634" y="400" class="label">Device validation</text><text x="634" y="428" class="detail">Devices · Firebase Test Lab</text></g>
+  <g><rect class="node" x="872" y="368" width="206" height="84" rx="11"/><text x="888" y="400" class="label">Android releases</text><text x="888" y="428" class="detail">Google Play · APKs</text></g>
+  <text x="110" y="483" class="sub">The cloud hub orchestrates builds; compilation and physical-device testing run elsewhere.</text>
+
+  <text x="110" y="524" class="section">APPLE · SOURCE → MACOS CI → BETA DELIVERY</text>
+  <path class="line" data-root-branch="apple" d="M68 590 H107"/>
+  <path class="line" d="M318 590 H361"/><path class="line" d="M572 590 H615"/><path class="line" d="M826 590 H869"/>
+  <g><rect class="node" x="110" y="548" width="208" height="84" rx="11"/><text x="126" y="580" class="label">GitHub source</text><text x="126" y="608" class="detail">Pushes · Workflow triggers</text></g>
+  <g><rect class="node" x="364" y="548" width="208" height="84" rx="11"/><text x="380" y="580" class="label">GitHub Actions</text><text x="380" y="608" class="detail">Hosted macOS runners</text></g>
+  <g><rect class="node" x="618" y="548" width="208" height="84" rx="11"/><text x="634" y="580" class="label">Xcode workflow</text><text x="634" y="608" class="detail">Build · Test · Archive · Sign</text></g>
+  <g><rect class="node" x="872" y="548" width="206" height="84" rx="11"/><text x="888" y="580" class="label">TestFlight delivery</text><text x="888" y="608" class="detail">App Store Connect</text></g>
+  <text x="110" y="663" class="sub">Apple compilation runs on macOS; the Linux cloud hub supplies the source and orchestration.</text>
+
+  <text x="110" y="704" class="section">WEB · HOST → SERVE → DELIVER</text>
+  <path class="line" data-root-branch="web" d="M68 770 H107"/>
+  <path class="line" d="M402 770 H445"/><path class="line" d="M740 770 H783"/>
+  <g><rect class="node" x="110" y="728" width="292" height="84" rx="11"/><text x="128" y="760" class="label">Hosted application runtime</text><text x="128" y="788" class="detail">Podman · systemd · Linux services</text></g>
+  <g><rect class="node" x="448" y="728" width="292" height="84" rx="11"/><text x="466" y="760" class="label">HTTPS delivery</text><text x="466" y="788" class="detail">Caddy · Cloudflare Tunnel</text></g>
+  <g><rect class="node" x="786" y="728" width="292" height="84" rx="11"/><text x="804" y="760" class="label">Web applications</text><text x="804" y="788" class="detail">Installable PWAs · APIs</text></g>
+  <text x="110" y="843" class="sub">Self-hosted workloads use the central cloud machine; static publication is a separate capability.</text>
+
+  <text x="110" y="884" class="section">CLOUD, DATA &amp; PUBLICATION</text>
+  <path class="trunk capability" data-root-branch="data" d="M68 892 H932"/>
+  <path class="line capability" d="M256 892 V905"/><path class="line capability" d="M594 892 V905"/><path class="line capability" d="M932 892 V905"/>
+  <g><rect class="node" x="110" y="908" width="292" height="100" rx="11"/><text x="128" y="940" class="label">Firebase services</text><text x="128" y="968" class="detail">Functions · Firestore</text><text x="128" y="991" class="detail">Native AI and billing integration</text></g>
+  <g><rect class="node" x="448" y="908" width="292" height="100" rx="11"/><text x="466" y="940" class="label">Application data stores</text><text x="466" y="968" class="detail">SQLite · PostgreSQL · Elasticsearch</text><text x="466" y="991" class="detail">Local-first and server-backed designs</text></g>
+  <g><rect class="node" x="786" y="908" width="292" height="100" rx="11"/><text x="804" y="940" class="label">Static and artifact publishing</text><text x="804" y="968" class="detail">GitHub Pages · GitHub Releases</text><text x="804" y="991" class="detail">Separate publication destinations</text></g>
+
+  <text x="110" y="1064" class="section">AI, VOICE &amp; MEDIA CAPABILITIES</text>
+  <path class="trunk capability" data-root-branch="ai" d="M68 1072 H932"/>
+  <path class="line capability" d="M256 1072 V1085"/><path class="line capability" d="M594 1072 V1085"/><path class="line capability" d="M932 1072 V1085"/>
+  <g><rect class="node" x="110" y="1088" width="292" height="100" rx="11"/><text x="128" y="1120" class="label">AI APIs</text><text x="128" y="1148" class="detail">Google Gemini · OpenRouter</text><text x="128" y="1171" class="detail">TypeSafe AI / Jev</text></g>
+  <g><rect class="node" x="448" y="1088" width="292" height="100" rx="11"/><text x="466" y="1120" class="label">Voice and asset tooling</text><text x="466" y="1148" class="detail">ElevenLabs · Meshy integration</text><text x="466" y="1171" class="detail">Development-time media workflows</text></g>
+  <g><rect class="node" x="786" y="1088" width="292" height="100" rx="11"/><text x="804" y="1120" class="label">Local inference</text><text x="804" y="1148" class="detail">ONNX Runtime · Whisper · MediaPipe</text><text x="804" y="1171" class="detail">Browser · Native · Server processing</text></g>
+
+  <text x="110" y="1244" class="section">MODEL WORKFLOWS &amp; SHARED DELIVERY TOOLS</text>
+  <path class="trunk capability" data-root-branch="tools" d="M68 1252 H932"/>
+  <path class="line capability" d="M256 1252 V1265"/><path class="line capability" d="M594 1252 V1265"/><path class="line capability" d="M932 1252 V1265"/>
+  <g><rect class="node" x="110" y="1268" width="292" height="100" rx="11"/><text x="128" y="1300" class="label">Model experiments</text><text x="128" y="1328" class="detail">Runpod · Hugging Face</text><text x="128" y="1351" class="detail">Training · Evaluation · Model export</text></g>
+  <g><rect class="node" x="448" y="1268" width="292" height="100" rx="11"/><text x="466" y="1300" class="label">On-demand Apple workspace</text><text x="466" y="1328" class="detail">Scaleway cloud-Mac workflow</text><text x="466" y="1351" class="detail">Xcode · Simulator</text></g>
+  <g><rect class="node" x="786" y="1268" width="292" height="100" rx="11"/><text x="804" y="1300" class="label">Shared delivery tools</text><text x="804" y="1328" class="detail">Syncthing · ntfy · Web Push</text><text x="804" y="1351" class="detail">Artifact handoff and notifications</text></g>
+
+  <text x="42" y="1421" class="sub">All branches share the cloud hub as a development or orchestration origin. Execution may occur on workers or external services.</text>
+  <text x="42" y="1450" class="sub">Selected factual capabilities · Simplified logical relationships · Deployment identities and operational state omitted</text>
+  <text x="42" y="1485" class="section">LOGICAL ARCHITECTURE · NOT A LIVE NETWORK OR SERVICE-HEALTH DIAGRAM</text>
+</svg>
