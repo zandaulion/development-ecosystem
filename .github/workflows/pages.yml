@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 name: Deploy architecture overview
 
 on:
@@ -30,12 +31,12 @@ jobs:
       - name: Prepare the static publication files
         run: |
           mkdir -p _site
-          cp -- index.html architecture.svg _site/
+          cp -- index.html architecture.svg LICENSE _site/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
 
-      - name: Upload only the page and diagram
+      - name: Upload only the page, diagram, and license
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: _site

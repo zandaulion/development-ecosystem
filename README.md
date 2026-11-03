@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+
 # My development ecosystem
 
 A public overview of cloud-centered software development: Android and Apple
@@ -47,9 +49,9 @@ The included workflow deploys updates from `main` or a manual Actions run.
 After creating the GitHub repository, choose **Settings → Pages → Build and
 deployment → Source → GitHub Actions**.
 
-The workflow copies only `index.html` and `architecture.svg` into its deployment
-artifact. GitHub Actions dependencies are pinned to commit hashes. No custom
-domain or additional deployment secrets are needed.
+The workflow copies only `index.html`, `architecture.svg`, and `LICENSE` into its
+deployment artifact. GitHub Actions dependencies are pinned to commit hashes.
+No custom domain or additional deployment secrets are needed.
 
 ## Scope and editing
 
@@ -66,3 +68,15 @@ The repository contains only static HTML, SVG, and documentation, plus its
 deployment workflow. It uses no scripts, external fonts, analytics, or embedded
 private inventory. The ignore rules keep new files excluded until explicitly
 allowed.
+
+## License
+
+Copyright (C) 2026 development-ecosystem contributors.
+
+The original code, diagram, documentation, and repository configuration are
+licensed under the **GNU General Public License, version 3 or (at your option)
+any later version** (`GPL-3.0-or-later`).
+
+This work is distributed without any warranty, including the implied warranties
+of merchantability or fitness for a particular purpose. See [LICENSE](LICENSE)
+for the full terms.

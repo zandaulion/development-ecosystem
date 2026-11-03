@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1510" role="img" aria-labelledby="title desc">
+  <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+  <!-- Copyright (C) 2026 development-ecosystem contributors. -->
   <title id="title">Development ecosystem rooted in a central Linux cloud machine</title>
   <desc id="desc">A developer workstation connects to the central Linux cloud machine. Every workflow branches from this shared development and orchestration hub: Android build and device validation, GitHub and Apple delivery, web hosting, cloud and data services, AI and media tooling, and model and shared-delivery workflows. Solid arrows show simplified build and delivery sequences. Dashed branches show capabilities coordinated or used across projects, not direct traffic or execution on the central machine. Deployment identities and operational details are omitted.</desc>
   <style>
